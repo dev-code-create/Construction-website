@@ -34,6 +34,9 @@ header {
   background: #f4f4f4;
   padding: 20px 0;
   border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo img {
@@ -791,4 +794,15 @@ header .container,
     .client-info h4 {
         font-size: 16px;
     }
+}
+
+/* Add at the top of your CSS file */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add styles for active navigation link */
+nav ul li a:hover,
+nav ul li a.active {
+    color: #E31E24;
 }
